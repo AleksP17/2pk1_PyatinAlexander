@@ -37,7 +37,7 @@ namespace pz_5
                  Console.Write(" " + c);
                  Console.WriteLine();           
                 }
-            } 
+            }  
            Console.WriteLine("\nЗадание 5:");
             int i = 5;
             int j = 64;
