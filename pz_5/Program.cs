@@ -44,6 +44,7 @@ namespace pz_5
             for ( i = 5, j = 64; j - i > 23; i++, j--)
             {
              Console.WriteLine("i и j равны:" +i+ "и" +j);
+
             }
         }
 
