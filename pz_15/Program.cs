@@ -14,13 +14,14 @@ namespace pz_15
             int[,] A = new int[5, 8];
             for (i = 0; i < 5; i++)
             {
-                for (j = 0; j <= 8; j++)
+                for (j = 0; j < 8; j++)
                 {
                     A[i, j] = i * j;
                     Console.Write(A[i, j] + " ");
                 }
-                writer.WriteLine();
+                
             }
+            writer.WriteLine();
             writer.Close();
         }
     }
