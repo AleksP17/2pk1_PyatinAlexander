@@ -1,23 +1,25 @@
 ﻿using System;
+using System.IO;
+
 
 namespace pz_17
 {
     class Program
     {
-        static public int[] Geom(int n)
+        public static int Geom(int n)
         {
-            int[] arr = new int[n];
-
-            for (int i = 0; i < n; i++)
-                arr[i] = 10 * 2 ^ (n - 1);
-
-            return arr;
+            if (n == 1)
+                return 1;
+            
+                return Geom(10 * 2 ^ (n - 1));
         }
+            
+        
         static void Main(string[] args)
         {
-            Geom(5);
-            int[] A;
-            A = Geom(5);
+            
+            Console.WriteLine(Geom(2));
+           
         }
     }
 }

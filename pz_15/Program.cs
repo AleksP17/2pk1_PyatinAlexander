@@ -7,9 +7,9 @@ namespace pz_15
     {
         static void Main(string[] args)
         {
-            FileStream file = new FileStream(@"C:\File1.txt", FileMode.Open);
+            FileStream file = new FileStream(@"C:\File1.txt", FileMode.OpenOrCreate, FileAccess.ReadWrite);
             StreamWriter writer = new StreamWriter(file);
-            Console.WriteLine("Массив А:");
+            writer.WriteLine("Массив А:");
             int i, j;
             int[,] A = new int[5, 8];
             for (i = 0; i < 5; i++)
@@ -17,12 +17,13 @@ namespace pz_15
                 for (j = 0; j < 8; j++)
                 {
                     A[i, j] = i * j;
-                    Console.Write(A[i, j] + " ");
+                    writer.Write(A[i, j] + " ");
                 }
-                
+                writer.WriteLine();
             }
             writer.WriteLine();
             writer.Close();
+            
         }
     }
 }
