@@ -8,19 +8,21 @@ namespace pz_17
     {
         public static int[] Geom(int n)
         {
-            int[] A = new int[n];
+            int[] Geom = new int[n];
             int i;
             for (i = 0; i < n; i++)
-                A[i] = 10 * 2 ^ (n - 1);
-            return A;
+                Geom[i] = 10 * 2 ^ (n - 1);
+            return Geom;
         }
             
         
         static void Main(string[] args)
         {
-            Console.WriteLine("Геометрический массив:");
-            Geom(7);
-            
+            Console.WriteLine(Geom(4));
+            for (int i = 1; i < 8; i++)
+                
+            Console.ReadLine();
+
 
 
         }
