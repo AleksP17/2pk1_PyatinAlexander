@@ -4,16 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace pz_2_3
+namespace pz_2_4
 {
     class Track
     {
-         string _author;
-         string _title;
-         string _valbum;
-         int _year;
-         int _bitrate;
-         string _type;
+        string _author;
+        string _title;
+        string _valbum;
+        int _year;
+        int _bitrate;
+        string _type;
 
 
 
@@ -56,7 +56,7 @@ namespace pz_2_3
         public void GetInfo()
         {
             Console.WriteLine($"Исполнитель: {_author} \n  Название: { _title}\n Альбом: {_valbum}\n Год выхода: {_year} \n  Битрейт: {_bitrate} \n Тип кодека: {_type}");
-           
+
         }
     }
 }
