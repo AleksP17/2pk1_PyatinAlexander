@@ -18,7 +18,7 @@ namespace pz_2_4
             app3.GetInfo();
             Console.WriteLine();
 
-            var app4 = new Track("Денис Дрозд", "Птичка", "Скворечник", 2013, 789);
+            var app4 = new Track("Денис Дрозд", "Птичка", "Скворечник", 1999, 55);
             app4.GetInfo();
             Console.WriteLine();
 

@@ -11,29 +11,81 @@ namespace pz_2_4
         string _author;
         string _title;
         string _valbum;
-        int _year;
+        double _year;
         int _bitrate;
         string _type;
+        static double _NumberOfTracks = 0;
+        double Year
+        {
+            get { return _year; }
+            set
+            {
+                if (value >= 1990 && value <= 2022)
+                {
+                    _year = value;
+                }
+                else
+                    Console.WriteLine("Error");
+                  
+            }
+        }
+        enum Type
+        { 
+            MP3,
+            AAC,
+            FLAC
+        }
+        string Author
+        {
+            get { return _author; }
+            set
+            {
+                if (value != "")
+                    _author = value;
+                else
+                    _author = "unknoun";
+            }
+        }
+        string Title
+        {
+            get { return _title; }
+            set
+            {
+                if (value != "")
+                    _title = value;
+                else
+                    _title = "unknoun";
+            }
+        }
+        string Valbum
+        {
+            get { return _valbum; }
+            set
+            {
+                if (value != "")
+                    _valbum = value;
+                else
+                    _valbum = "unknoun";
+            }
 
-
-
+        }
         public Track()
         {
-            _author = "unknoun";
-            _title = "unknoun";
-            _valbum = "unknoun";
+            _author = "";
+            _title = "";
+            _valbum = "";
             _year = 0;
             _bitrate = 0;
-            _type = "unknoun";
+            _type = "";
         }
         public Track(string author)
         {
             _author = author;
-            _title = "unknoun";
-            _valbum = "unknoun";
+            _title = "";
+            _valbum = "";
             _year = 0;
             _bitrate = 0;
-            _type = "unknoun";
+            _type = "";
         }
         public Track(string author, string title, string valbum) : this(author)
         {
@@ -41,13 +93,13 @@ namespace pz_2_4
             _valbum = valbum;
             _year = 0;
             _bitrate = 0;
-            _type = "unknoun";
+            _type = "";
         }
         public Track(string author, string title, string valbum, int year, int bitrate) : this(author, title, valbum)
         {
             _year = year;
             _bitrate = bitrate;
-            _type = "unknoun";
+            _type = "";
         }
         public Track(string author, string title, string valbum, int year, int bitrate, string type) : this(author, title, valbum, year, bitrate)
         {
