@@ -21,15 +21,12 @@ namespace pz_2_4
             set
             {
                 if (value >= 1990 && value <= 2022)
-                {
                     _year = value;
-                }
-                else
-                    Console.WriteLine("Error");
-                  
+
             }
         }
-        enum Type
+
+        enum Type 
         { 
             MP3,
             AAC,
@@ -71,33 +68,33 @@ namespace pz_2_4
         }
         public Track()
         {
-            _author = "";
-            _title = "";
-            _valbum = "";
-            _year = 0;
+            Author = "";
+            Title = "";
+            Valbum = "";
+            Year = 0;
             _bitrate = 0;
             _type = "";
         }
         public Track(string author)
         {
-            _author = author;
-            _title = "";
-            _valbum = "";
-            _year = 0;
+            Author = author;
+            Title = "";
+            Valbum = "";
+            Year = 0;
             _bitrate = 0;
             _type = "";
         }
         public Track(string author, string title, string valbum) : this(author)
         {
-            _title = title;
-            _valbum = valbum;
-            _year = 0;
+            Title = title;
+            Valbum = valbum;
+            Year = 0;
             _bitrate = 0;
             _type = "";
         }
-        public Track(string author, string title, string valbum, int year, int bitrate) : this(author, title, valbum)
+        public Track(string author, string title, string valbum, double year, int bitrate) : this(author, title, valbum)
         {
-            _year = year;
+            Year = year;
             _bitrate = bitrate;
             _type = "";
         }
@@ -105,10 +102,11 @@ namespace pz_2_4
         {
             _type = type;
         }
+        
         public void GetInfo()
         {
             Console.WriteLine($"Исполнитель: {_author} \n  Название: { _title}\n Альбом: {_valbum}\n Год выхода: {_year} \n  Битрейт: {_bitrate} \n Тип кодека: {_type}");
-
+           
         }
     }
 }
