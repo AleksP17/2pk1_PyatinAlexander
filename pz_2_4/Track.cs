@@ -105,8 +105,8 @@ namespace pz_2_4
         
         public void GetInfo()
         {
-            Console.WriteLine($"Исполнитель: {_author} \n  Название: { _title}\n Альбом: {_valbum}\n Год выхода: {_year} \n  Битрейт: {_bitrate} \n Тип кодека: {_type}");
-           
+            Console.WriteLine($"Исполнитель: {Author} \n  Название: { Title}\n Альбом: {Valbum}\n Год выхода: {Year} \n  Битрейт: {_bitrate} \n Тип кодека: {_type}");
+            
         }
     }
 }
