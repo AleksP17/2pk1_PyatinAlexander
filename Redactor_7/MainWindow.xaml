@@ -64,9 +64,8 @@
                     <MenuItem Header="Удалить"></MenuItem>
                 </ContextMenu>
             </ListBox.ContextMenu>
-
         </ListBox>
         <TextBox x:Name="TextBox" TextChanged="TextBox_TextChanged" AcceptsTab="True" AcceptsReturn="True"  SpellCheck.IsEnabled="True" Language="ru-ru" ></TextBox>
-
+         
     </DockPanel>
 </Window>

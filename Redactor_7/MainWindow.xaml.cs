@@ -23,6 +23,7 @@ namespace Redactor_7
     public partial class MainWindow : Window
     {
         private string FileName;
+
         public MainWindow()
         {
             InitializeComponent();
