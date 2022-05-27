@@ -8,7 +8,7 @@
         Title="MainWindow" Height="450" Width="800">
     <DockPanel>
 
-        <StackPanel DockPanel.Dock="Top"  Height="38">
+        <StackPanel DockPanel.Dock="Top"   Height="38">
             <Menu Height="20" >
                 <MenuItem Header="File">
                     <MenuItem x:Name="newFileMenuItem" Header="New file"
